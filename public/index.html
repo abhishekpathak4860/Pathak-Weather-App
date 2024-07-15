@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+        <label class="logo">WeatherApp</label>
+        <ul>
+            <li><a class="point" href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li id="search">
+                <input type="text" id="search_location" placeholder="Enter Loacation">
+                <button id="submit">Search</button>
+            </li>
+        </ul>
+    </nav>
+    <!-- <i class="fa-solid fa-bars"></i> -->
+    <div id="date">
+        Tue | 9 July | 12:25 PM
+    </div>
+    <div class="real_temp">
+        <h2 id="location">Weather Condition</h2>
+        <hr>
+        <p><img src="" alt="" id="weather_icon"></p>
+        <div class="sky">Sky condition :<span class="color" id="sky"></span></div>
+        <div class="content">
+            <div id="temp">Temp : <span class="color" id="temp_c"></span><strong>&deg;C</strong></div>
+            <div id="min_temp">Min temp : <span class="color" id="min_temp_c"></span><strong>&deg;C</strong></div>
+            <div id="max_temp">Max temp : <span class="color" id="max_temp_c"></span><strong>&deg;C</strong></div>
+            <p id="humid">Humidity : <span class="color" id="humidity"></span><strong>%</strong></p>
+            <p id="wind_speed">Wind Speed : <span class="color" id="wind_speed_data"></span><strong>KM/H</strong></p>
+        </div>
+    </div>
+    <script src="/public/script.js"></script>
+</body>
+
+</html>

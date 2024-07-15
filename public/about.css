@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+   padding: 0; 
+   box-sizing: border-box; 
+}
+
+body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+nav {
+   /* background-color: #0082e6; */
+   background-color: blueviolet;
+   height: 100%;
+   width: 100%;
+   position: sticky;
+   top: 0;
+   /* z-index: 1000; */
+   /* position: sticky;  */
+}
+
+.logo {
+   color: white;
+   font-size: 35px;
+   line-height: 80px;
+   font-weight: bold;
+   padding: 0px 50px;
+}
+
+nav ul {
+   float: right;
+   margin-right: 20px;
+}
+
+nav ul li {
+   display: inline-block;
+   line-height: 80px;
+   margin: 0px 7px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: white;
+   text-transform: uppercase;
+}
+
+a.point,
+a:hover {
+   background-color: #1b9bff;
+   transition: 0.5s ease;
+}
+.about h2{
+   text-align: center;
+   font-size: 47px;
+   text-shadow: 2px 2px 4px yellow;
+}
+.about .top_content{
+   line-height: 29px;
+   padding: 15px 11px;
+   font-style: oblique;
+}
+.about .capital{
+   font-weight: bold;
+   font-size: x-large;
+}
+.why_weather_app{
+   margin-top: 15px;
+}
+.why_weather_app h3{
+   font-size: 28px;
+   color: blue;
+}
+.heading{
+   padding-left: 8px;
+}
+.why_weather_app ul{
+   margin-top: 15px;
+}
+.why_weather_app ul li{
+   /* padding-left: 18px; */
+   padding: 8px 18px;
+}
+#icon{
+    padding-right: 10px; 
+}
+.feature{
+   margin-top:15px; ;
+}
+#feature{
+   color: blue;
+   font-size: 28px;
+}
+.feature ul{
+   margin-top: 15px;
+}
+.feature ul li{
+   padding: 8px 18px;
+}
+#icon_2{
+   padding: 0px 10px;
+   font-size: 24px;
+}
+.commit{
+   margin-top: 15px;
+}
+.commit h2{
+   font-size: 28px;
+   color: blue;
+}
+.commit .second_last{
+   margin-top: 15px;
+   padding: 15px 11px;
+}
+.commit .last_notleast{
+   margin-top: 15px;
+   text-align: center;
+   line-height: 29px;
+}
+@media (max-width:882px) {
+
+   .logo {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+        font-size: 45px;  
+   }
+
+   nav ul {
+       position: absolute;
+       top: 70px;
+       width: 100%;
+       height: 100px;
+       background-color: #2c3e50;
+       transition: all 0.2s ease;
+       z-index: -1;
+       text-align: center;
+   }
+
+   .about {
+       padding-top: 100px;
+   }
+ .about h2{
+   font-size: 28px;
+ }
+ .why_weather_app h3{
+   font-size: 24px;
+}
+   nav ul li {
+       display: inline;
+   }
+
+   nav ul li a {
+       font-size: 15px;
+   }
+
+   a:hover,
+   a.point {
+       background: none;
+       color: #0082e6;
+   }
+
+}
