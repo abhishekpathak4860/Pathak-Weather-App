@@ -47,6 +47,6 @@ const server=http.createServer((req,res)=>{
        }
 });
 
- server.listen(8002,"192.168.0.188",()=>{
+ server.listen(8002,"0.0.0.0",()=>{
       console.log("currently listening to the port");
 });
