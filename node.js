@@ -2,10 +2,10 @@
  const fs=require('fs');
   const path=require('path');
 
- const home=fs.readFileSync("./public/index.html","utf-8");
- const about=fs.readFileSync("./public/about.html","utf-8");
- const contact=fs.readFileSync("./public/contact.html","utf-8");
- const services=fs.readFileSync("./public/services.html","utf-8");
+ const home=fs.readFileSync("/public/index.html","utf-8");
+ const about=fs.readFileSync("/public/about.html","utf-8");
+ const contact=fs.readFileSync("/public/contact.html","utf-8");
+ const services=fs.readFileSync("/public/services.html","utf-8");
 
  const server=http.createServer((req,res)=>{
          if(req.url==="/"){
