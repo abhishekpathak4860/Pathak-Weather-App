@@ -33,7 +33,7 @@
               res.end(image);
          }
          else if(req.url==="/about"){
-             res.end("hello from the about page");
+             res.end(about);
           }
           else if(req.url==="/contact"){
               res.end(contact);
