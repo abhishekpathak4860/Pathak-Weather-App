@@ -13,13 +13,16 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/public/$1",
-            "status": 200
+            "src": "/public/(.*)",
+            "dest": "/public/$1"
         },
         {
             "src": "/api/(.*)",
             "dest": "/node.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/public/$1"
         }
     ]
 }
