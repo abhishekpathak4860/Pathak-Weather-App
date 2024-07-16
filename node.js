@@ -33,7 +33,7 @@ const server=http.createServer((req,res)=>{
              res.end(image);
         }
         else if(req.url=="/about"){
-            res.end(about);
+            res.end("hello from the about page");
          }
          else if(req.url=="/contact"){
              res.end(contact);
