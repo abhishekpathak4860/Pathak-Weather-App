@@ -8,7 +8,7 @@
  const services=fs.readFileSync("./public/services.html","utf-8");
 
  const server=http.createServer((req,res)=>{
-         if(req.url=="/"){
+         if(req.url==="/"){
               res.end(home);
          }
         else if(req.url.match("\.css$")){
@@ -32,13 +32,13 @@
               res.writeHead(200,{"content-type":`image/${ext}`});
               res.end(image);
          }
-         else if(req.url=="/about"){
+         else if(req.url==="/about"){
              res.end("hello from the about page");
           }
-          else if(req.url=="/contact"){
+          else if(req.url==="/contact"){
               res.end(contact);
           }
-         else if(req.url=="/services"){
+         else if(req.url==="/services"){
              res.end(services);
           }
           else{           
