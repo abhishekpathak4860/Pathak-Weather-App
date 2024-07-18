@@ -55,7 +55,7 @@ const path=require('path');
 const express = require("express");
 const server = express();
 
- const staticPath=path.join(__dirname,"public");
+ const staticPath=path.join(__dirname,"/public");
 // built in middleware
 server.use(express.static(staticPath));
    const port=8000;
